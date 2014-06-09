@@ -1,0 +1,459 @@
+Quartus II 32-bit
+Version 11.1 Build 173 11/01/2011 SJ Web Edition
+41
+5104
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+tb_ramIntro
+# storage
+db|ramIntroBlockDiagram.(0).cnf
+db|ramIntroBlockDiagram.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+tb_ramintro.vhd
+53bb7052141a9053e8e264f33c2dbb6c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+generator
+# storage
+db|ramIntroBlockDiagram.(1).cnf
+db|ramIntroBlockDiagram.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+generator.vhd
+ee33a43e56353f8676f9d574f2939042
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+8
+PARAMETER_SIGNED_DEC
+USR
+ constraint(d)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(vec)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+receiver
+# storage
+db|ramIntroBlockDiagram.(2).cnf
+db|ramIntroBlockDiagram.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+receiver.vhd
+f13359f8b6f734cfe679547073f85831
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(rec_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+ramController
+# storage
+db|ramIntroBlockDiagram.(3).cnf
+db|ramIntroBlockDiagram.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ramcontroller.vhd
+fa7ef165ad6792968c80b8dca1d93393
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(ctrl_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(addr)
+5 downto 0
+PARAMETER_STRING
+USR
+ constraint(ctrl_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+ram
+# storage
+db|ramIntroBlockDiagram.(4).cnf
+db|ramIntroBlockDiagram.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ram.vhd
+15b71c37ab6773e77cead1b4312347cf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(addr)
+5 downto 0
+PARAMETER_STRING
+USR
+ constraint(ram_in)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(ram_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+dataValidation
+# storage
+db|ramIntroBlockDiagram.(5).cnf
+db|ramIntroBlockDiagram.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+datavalidation.vhd
+ab8eb5fa0fdb917d5a12f4fb0526157
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+ constraint(ctrl_out)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(ram_out)
+7 downto 0
+PARAMETER_STRING
+USR
+}
+# macro_sequence
+
+# end
+# entity
+generator
+# storage
+db|ramIntroBlockDiagram.(6).cnf
+db|ramIntroBlockDiagram.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+generator.vhd
+ee33a43e56353f8676f9d574f2939042
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+N
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+ram
+# storage
+db|ramIntroBlockDiagram.(7).cnf
+db|ramIntroBlockDiagram.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ram.vhd
+15b71c37ab6773e77cead1b4312347cf
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+ramController
+# storage
+db|ramIntroBlockDiagram.(8).cnf
+db|ramIntroBlockDiagram.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+ramcontroller.vhd
+fa7ef165ad6792968c80b8dca1d93393
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+receiver
+# storage
+db|ramIntroBlockDiagram.(9).cnf
+db|ramIntroBlockDiagram.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+receiver.vhd
+f13359f8b6f734cfe679547073f85831
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# macro_sequence
+
+# end
+# entity
+dataValidation
+# storage
+db|ramIntroBlockDiagram.(10).cnf
+db|ramIntroBlockDiagram.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+datavalidation.vhd
+ab8eb5fa0fdb917d5a12f4fb0526157
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+bits
+8
+PARAMETER_SIGNED_DEC
+DEF
+words
+32
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

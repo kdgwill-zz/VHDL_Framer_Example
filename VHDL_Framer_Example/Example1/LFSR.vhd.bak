@@ -1,0 +1,35 @@
+Library ieee;
+use ieee.std_logic_1164.all ;
+use ieee.std_logic_unsigned.all ;
+
+Entity LFSR is 
+  Generic(N : Integer := 8);
+  Port(
+        D                       : IN   STD_Logic_Vector(N-1 DownTo 0);
+        Load,Reset,Clock        : IN   STD_Logic;        
+        vec                     : OUT  std_logic_vector(N-1 downto 0);
+        sin                     : OUT  STD_Logic
+  );
+End LFSR;
+
+Architecture LFSR of LFSR is
+ signal tap: std_logic;
+ signal ssr: std_logic_vector(n-1 downto 0);
+  
+ Begin
+  Process(Clock,Reset,Load) 
+  Begin
+      If(reset='0') then
+        SSR <= (others => '0');
+      elsif rising_edge(Clock) Then
+        IF Load = '1' AND (SSR="00000000" OR SSR="11111111") Then 
+          SSR <= D;
+        ELSE
+          SSR<= SSR(6 downTo 0)&tap;
+        END If;
+      End If;
+      tap<=SSR(1) XOR SSR(2)XOR SSR(3)XOR SSR(7);    
+      sin<= SSR(7);
+      vec<= SSR;
+  End Process;  
+End LFSR;

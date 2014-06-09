@@ -1,0 +1,45 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+USE ieee.std_logic_unsigned.all ;
+
+ENTITY tb_LFSR IS
+--port (
+--);
+END;
+
+ARCHITECTURE tb_LFSR of tb_LFSR IS
+Signal	vec   : std_logic_vector(7 downto 0);
+Signal	sin		       : STD_LOGIC;
+Signal	clock		   : STD_LOGIC;
+Signal	load    		: STD_LOGIC;
+Signal reset		   : STD_LOGIC;
+Signal	D	        : std_logic_vector (7 downto 0);
+
+COMPONENT generator  
+Generic(N : Integer := 8);
+  PORT( 
+        clock, reset, load: OUT std_logic;
+        D                 : OUT std_logic_vector(n-1 downto 0)
+        
+        vec                     : OUT  std_logic_vector(N-1 downto 0);
+        sin                     : OUT  STD_Logic
+  );
+END COMPONENT;
+
+COMPONENT LFSR  
+  Generic(N : Integer := 8);
+  PORT( 
+        clock, reset, load: OUT std_logic;
+        D                 : OUT std_logic_vector(n-1 downto 0);
+        vec                     : OUT  std_logic_vector(N-1 downto 0);
+        sin                     : OUT  STD_Logic
+  );
+End COMPONENT;
+BEGIN
+GLFSR9: generator
+PORT Map ( clock		=> clock, reset	=> reset, load => load,D => D,vec=>vec,sin=>sin); 
+  
+--LFSR9: LFSR
+--PORT Map (  D		=> D, Load		=> load,reset		=> reset,clock		=> clock, vec=>vec,sin=>sin);
+  
+END tb_LFSR;

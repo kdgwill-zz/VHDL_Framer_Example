@@ -1,0 +1,338 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Kyle\Ubuntu One\ModelSim\EENG483
+Edatavalidation
+Z0 w1335721205
+Z1 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx3 std 6 textio 0 22 G^o2zK;Vh4eVdKTVo98653
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\Kyle\Ubuntu One\ModelSim\EENG483\VHDL\RAMINTRO
+Z6 8dataValidation.vhd
+Z7 FdataValidation.vhd
+l0
+L12
+V^DI7Cl@EkZbEJ499_@1SM0
+!s100 `WGkfo]zIO6IEEAA6:LiU0
+Z8 OV;C;10.0c;49
+32
+Z9 !s108 1352215989.046000
+Z10 !s90 -reportprogress|300|generator.vhd|receiver.vhd|ramController.vhd|ram.vhd|dataValidation.vhd|tb_ramIntro.vhd|
+Z11 !s107 tb_ramIntro.vhd|dataValidation.vhd|ram.vhd|ramController.vhd|receiver.vhd|generator.vhd|
+o-O0
+Z12 tExplicit 1
+Adatavalidation
+R1
+R2
+R3
+R4
+Z13 DEx4 work 14 datavalidation 0 22 ^DI7Cl@EkZbEJ499_@1SM0
+l34
+L27
+Z14 VYS41EzX@5dW::7m]m4R@i1
+Z15 !s100 JQLSVf9PmIZS^0GJ1K9k61
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Egenerator
+Z16 w1335732662
+R1
+R2
+R3
+R4
+R5
+Z17 8generator.vhd
+Z18 Fgenerator.vhd
+l0
+L12
+VF`<`jzD<0HlV4>R2KRiZD0
+!s100 e^0EhQ9I6Gj6:?HXzf1`m2
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Abehavior
+R1
+R2
+R3
+R4
+Z19 DEx4 work 9 generator 0 22 F`<`jzD<0HlV4>R2KRiZD0
+l33
+L22
+Z20 V[5:OYagIHaD_lOjFn?P9C3
+Z21 !s100 zP5JEE@?Dd30QAULW78aA2
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Elfsr
+Z22 w1334752502
+R1
+R2
+R3
+R4
+Z23 dC:\Users\Kyle\Ubuntu One\ModelSim\EENG483\ramIntro
+Z24 8LFSR.vhd
+Z25 FLFSR.vhd
+l0
+L5
+Vl<mOS4cIKUnI4gVL4;K9D0
+R8
+32
+Z26 !s108 1334753523.325000
+Z27 !s90 -reportprogress|300|generator.vhd|LFSR.vhd|tb_LFSR.vhd|
+Z28 !s107 tb_LFSR.vhd|LFSR.vhd|generator.vhd|
+o-O0
+R12
+!s100 j;bGX_BzondRdY97zf=U^1
+Alfsr
+R1
+R2
+R3
+R4
+DEx4 work 4 lfsr 0 22 l<mOS4cIKUnI4gVL4;K9D0
+l19
+L15
+Vhk_O1GLg]3iD:KLn1YYST1
+R8
+32
+R26
+R27
+R28
+o-O0
+R12
+!s100 UJ09GQ4X0OUYWU[J>k4k`1
+Eram
+Z29 w1336003866
+Z30 DPx4 ieee 11 numeric_std 0 22 k7B<7GmYYYmX;0X]XHFD10
+R1
+R2
+R3
+R4
+R5
+Z31 8ram.vhd
+Z32 Fram.vhd
+l0
+L12
+VzjkNc<a[CFW1Dao8nikg51
+!s100 NfSGYXNiQ>YK_4[n38?Kj0
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Aram
+R30
+R1
+R2
+R3
+R4
+Z33 DEx4 work 3 ram 0 22 zjkNc<a[CFW1Dao8nikg51
+l37
+L24
+Z34 VgjdMF8[Yz@Y0B8ECJidW33
+Z35 !s100 lYUEMgdccEm5aVh<iV2Rk0
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Eramcontroller
+Z36 w1335808357
+R30
+R1
+R2
+R3
+R4
+R5
+Z37 8ramController.vhd
+Z38 FramController.vhd
+l0
+L13
+V:W`;30E0HHiTQWFMB59=U1
+!s100 `]5lFX:n2W;PMSCK6AK4K3
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Aramcontroller
+R30
+R1
+R2
+R3
+R4
+Z39 DEx4 work 13 ramcontroller 0 22 :W`;30E0HHiTQWFMB59=U1
+l33
+L26
+Z40 V4@JN:b<G:0KMdifdkadL31
+Z41 !s100 ;OFB=dIO9O0S^zPWK7KKe2
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Ereceiver
+Z42 w1335806861
+R1
+R2
+R3
+R4
+R5
+Z43 8receiver.vhd
+Z44 Freceiver.vhd
+l0
+L12
+V3KJ6j5JPD1^32C7;D7h2?0
+!s100 ea4O7Idh>6J:fe:c;zYo;2
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Areceiver
+R1
+R2
+R3
+R4
+Z45 DEx4 work 8 receiver 0 22 3KJ6j5JPD1^32C7;D7h2?0
+l28
+L22
+Z46 VnoRMlBoi]ld5:[]_=]?<U0
+Z47 !s100 0dZ<>7^09X_jV0]IWIAS@2
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Eser_to_par
+Z48 w1334257753
+R3
+R4
+R23
+Z49 8ser_to_par.vhd
+Z50 Fser_to_par.vhd
+l0
+L4
+VbRc]_n[b<cMoUPBjSI6Oa3
+R8
+32
+Z51 !s108 1334287205.508000
+Z52 !s90 -reportprogress|300|generator.vhd|LFSR.vhd|ser_to_par.vhd|receiver.vhd|ramController.vhd|ram.vhd|dataValidation.vhd|tb_ramIntro.vhd|
+Z53 !s107 tb_ramIntro.vhd|dataValidation.vhd|ram.vhd|ramController.vhd|receiver.vhd|ser_to_par.vhd|LFSR.vhd|generator.vhd|
+o-O0
+R12
+!s100 6o67i@Y]lc<YThge9ajO03
+Abehavior
+R3
+R4
+DEx4 work 10 ser_to_par 0 22 bRc]_n[b<cMoUPBjSI6Oa3
+l16
+L12
+V5WQdd8Q5?]VCKJ0;>O>@Z1
+R8
+32
+R51
+R52
+R53
+o-O0
+R12
+!s100 Q_jL`J<Y[J_4nBknMDaG]3
+Etb_lfsr
+Z54 w1334753520
+R1
+R2
+R3
+R4
+R23
+Z55 8tb_LFSR.vhd
+Z56 Ftb_LFSR.vhd
+l0
+L5
+Vzm3YleBYjBK[iT=U<FBKA2
+R8
+32
+Z57 !s108 1334753687.501000
+Z58 !s90 -reportprogress|300|generator.vhd|tb_LFSR.vhd|
+Z59 !s107 tb_LFSR.vhd|generator.vhd|
+o-O0
+R12
+!s100 Y_e3UcNb8JJJJ4[gim0H[0
+Atb_lfsr
+R1
+R2
+R3
+R4
+DEx4 work 7 tb_lfsr 0 22 zm3YleBYjBK[iT=U<FBKA2
+l38
+L10
+V0?]Fj_:WcbO9>DGPogUL01
+R8
+32
+R57
+R58
+R59
+o-O0
+R12
+!s100 fS5z@T1bCbb7gUMUzAFeT1
+Etb_ramintro
+Z60 w1336099918
+R1
+R2
+R3
+R4
+R5
+Z61 8tb_ramIntro.vhd
+Z62 Ftb_ramIntro.vhd
+l0
+L16
+VKcoiJ[D9kZ`HjeQF4RkW40
+!s100 I8;[Q]S0@XmcTaG>;1CSR1
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+Atb_ramintro
+R1
+R2
+R3
+R4
+Z63 DEx4 work 11 tb_ramintro 0 22 KcoiJ[D9kZ`HjeQF4RkW40
+l90
+L20
+Z64 Vj;@f2Ke]E[CMhj8OYj^k<3
+Z65 !s100 2oW_lXNQnkVbilY`z[ZYG0
+R8
+32
+R9
+R10
+R11
+o-O0
+R12

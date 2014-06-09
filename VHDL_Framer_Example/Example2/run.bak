@@ -1,0 +1,35 @@
+quit -sim;
+
+vcom tb_framer_generator.vhd Framer.vhd Average.vhd Ram.vhd Add.vhd Divider.vhd tb_FramerTop.vhd; 
+vsim tb_FramerTop;
+
+add wave -divider AVERAGE \
+sim:/tb_framertop/Avg/*;
+
+add wave -divider ADD \
+sim:/tb_framertop/Add1/data0x \
+sim:/tb_framertop/Add1/data1x \
+sim:/tb_framertop/Add1/result;
+
+add wave -divider DIVIDER \
+sim:/tb_framertop/Div1/denom \
+sim:/tb_framertop/Div1/quotient;
+
+radix signal /tb_framertop/Avg/shiftreg -hex;
+radix signal /tb_framertop/Avg/shiftreg8 -hex;
+radix sim:/tb_framertop/Avg/byte_count -deci;
+
+radix signal /tb_framertop/Avg/ram_address -deci;
+radix signal /tb_framertop/Avg/ram_data -hex;
+radix signal /tb_framertop/Avg/ram_q -hex;
+
+radix sim:/tb_framertop/Add1/data0x -hex;
+radix sim:/tb_framertop/Add1/data1x -hex;
+radix sim:/tb_framertop/Add1/result -hex;
+
+radix signal /tb_framertop/Div1/denom -hex;
+radix signal /tb_framertop/Div1/quotient -hex;
+
+
+run 70 us;
+wave zoom full;
